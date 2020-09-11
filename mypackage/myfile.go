@@ -1,5 +1,5 @@
 package mypackage
 
-func myfunc() string {
+func Myfunc() string {
 	return "version 1.0.0"
 }
