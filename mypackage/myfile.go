@@ -1,5 +1,13 @@
 package mypackage
 
+import (
+	"context"
+
+	"golang.org/x/sync/errgroup"
+)
+
 func Myfunc() string {
-	return "version 1.1.0"
+	g, _ := errgroup.WithContext(context.Background())
+	_ = g.Wait()
+	return "version 2.0.0"
 }
